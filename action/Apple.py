@@ -1,6 +1,6 @@
 import requests
 
-rawApple = requests.get("https://ruleset.skk.moe/List/non_ip/apple_services.conf").text
+rawApple = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list").text
 
 result = rawApple.split("\n")
 
