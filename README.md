@@ -10,4 +10,4 @@
 | [GlobalMedia](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/GlobalMedia.conf) | 全球媒体| ✅  |
 | [Global](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/Global.conf)| 全球服务| ✅  |
 | [GlobalDomain](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/GlobalDomain.conf)| 全球服务| ✅  |
-| [ChinaASN](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/ChinaASN.conf) | 中国服务| ✅  |
+| [ChinaASN](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/ChinaASN.conf) | 中国直连| ✅  |
