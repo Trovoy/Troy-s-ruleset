@@ -1,9 +1,8 @@
 import requests
 
-rawRejectnonip = requests.get("https://ruleset.skk.moe/List/non_ip/reject.conf").text
-rawRejectip = requests.get("https://ruleset.skk.moe/List/ip/reject.conf").text
+rawREJECT = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list").text
 
-result = rawRejectnonip.split("\n") + rawRejectip.split("\n")
+result = rawREJECT.split("\n")
 
 with open("./Reject.conf", "w") as f:
     f.write("\n".join(result))
