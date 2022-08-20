@@ -5,10 +5,10 @@ rawDisney = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rul
 rawYouTube = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list").text
 rawTwitch = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitch/Twitch.list").text
 rawEmby = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Emby/Emby.list").text
+rawTikTok = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list").text
 
 
-
-result = rawNetflix.split("\n") + rawDisney.split("\n") + rawYouTube.split("\n") + rawTwitch.split("\n") + rawEmby.split("\n")
+result = rawNetflix.split("\n") + rawDisney.split("\n") + rawYouTube.split("\n") + rawTwitch.split("\n") + rawEmby.split("\n") + rawTikTok.split("\n")
 
 with open("./GlobalMedia.conf", "w") as f:
     f.write("\n".join(result))
