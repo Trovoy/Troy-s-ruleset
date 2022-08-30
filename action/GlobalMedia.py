@@ -7,8 +7,10 @@ rawTwitch = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rul
 rawEmby = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Emby/Emby.list").text
 rawTikTok = requests.get("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list").text
 
-
-result = rawNetflix.split("\n") + rawDisney.split("\n") + rawYouTube.split("\n") + rawTwitch.split("\n") + rawEmby.split("\n") + rawTikTok.split("\n")
+result = list()
+for rawresult in [rawNetflix , rawDisney , rawYouTube , rawTwitch , rawEmby , rawTikTok]:
+    result.extend([item for item in rawresult.split("\n") if not item.startswith('#')])
+result_text = '\n'.join(result)
 
 with open("./GlobalMedia.conf", "w") as f:
     f.write("\n".join(result))
