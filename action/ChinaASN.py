@@ -1,6 +1,6 @@
 import requests
 
-rawChinaASN = requests.get("https://raw.githubusercontent.com/VirgilClyne/VirgilClyne/main/modules/ASN/ASN.list").text
+rawChinaASN = requests.get("https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list").text
 
 result = list()
 for rawresult in [rawChinaASN]:
