@@ -28,7 +28,6 @@ def get_module_content(module_urls):
 
 sgmodules = ['https://raw.githubusercontent.com/sub-store-org/Sub-Store/e93332048e0678ba0f85d8a42430a87d8bbdf5fc/config/Surge.sgmodule',
              'https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.surge.sgmodule',
-              'https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/sgmodule/Cloudflare.1.1.1.1.sgmodule',
              'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising_MITM.sgmodule']
 
 config_combine = get_module_content(sgmodules)
