@@ -27,6 +27,7 @@ def get_module_content(module_urls):
 
 
 sgmodules = ['https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/Surge.sgmodule',
+             'https://raw.githubusercontent.com/mieqq/mieqq/master/skip-proxy-lists.sgmodule',
              'https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.surge.sgmodule']
 
 config_combine = get_module_content(sgmodules)
