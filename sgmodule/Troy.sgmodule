@@ -40,6 +40,7 @@ DOMAIN-SUFFIX,emby.texon.one,Emby // 菜菜服
 DOMAIN-SUFFIX,texon.fans,Emby // 菜菜服NB
 DOMAIN-SUFFIX,aiyowei.club,DIRECT // 春田花花 直连
 DOMAIN-SUFFIX,pornemby.xyz,Emby // PornEmby
+DOMAIN-SUFFIX,nebula-emby.com,Emby // 星云
 
 [Panel]
 Stream_all = script-name=Stream_all,title=流媒体解锁检测,content=请刷新,update-interval=-1
