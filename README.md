@@ -2,8 +2,8 @@
 
 | 名称                           | 介绍                                          |   维护状态     |
 |:-----------: |:-----------:|:-----------:|
-| ~~[Reject](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/Reject.conf)~~| 去广告  |  ❌  |
-|~~[RejectDomain](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/RejectDomain.conf)~~| 去广告| ❌  |
+| ~~[Reject](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/Reject.conf)~~| ~~去广告~~|  ❌  |
+|~~[RejectDomain](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/RejectDomain.conf)~~|~~去广告~~| ❌  |
 | [Direct](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/Direct.conf) |  直连服务| ✅  |
 | ~~[AppleDomain](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/AppleDomain.conf)~~ | ~~苹果服务~~| ❌  |
 | [AsianMedia](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/AsianMedia.conf) | 亚洲媒体| ✅  |
