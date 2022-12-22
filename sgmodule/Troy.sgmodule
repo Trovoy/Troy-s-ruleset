@@ -2,54 +2,15 @@
 #!desc=Some thing.
 
 [MITM]
-hostname = %APPEND% sub.store, duckduckgo.com
+hostname = %APPEND% sub.store
 
 [Script]
 Sub-Store Core=type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js,requires-body=true,timeout=120,ability=http-client-policy
 Sub-Store Simple=type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js,requires-body=true
 Sub-Store Sync=type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
-Stream_all = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/Trovoy/Troy/main/Surge%20for%20myself/JS/YTB-NF-D%2B.js,script-update-interval=86400
 Rewrite: BoxJs = type=http-request,pattern=https?:\/\/boxjs\.(com|net),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120
 
 [General]
 skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com
 force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net
-
-[Rule]
-DOMAIN-SUFFIX,imovietv.ml,Emby // iMovieTV
-DOMAIN-SUFFIX,blueseacdn.com,Emby // BlueSea
-DOMAIN-SUFFIX,charontv.com,Emby // CharonTV
-DOMAIN-SUFFIX,embymv.tk,Emby // Peach
-DOMAIN-SUFFIX,misakaf.org,DIRECT // Misaka
-DOMAIN-SUFFIX,jiasu.ga,Emby // Cc
-DOMAIN-SUFFIX,404.sb,Emby // Netcup
-DOMAIN-SUFFIX,mjjemby.org,Emby // MJJ
-DOMAIN-SUFFIX,aaa.ax,Singapore // Misty
-DOMAIN-SUFFIX,178.173.230.8,Emby // Froghub
-DOMAIN-SUFFIX,junsama233.vip,DIRECT // Doki Doki
-DOMAIN-SUFFIX,embytv.cf,Emby // Orange
-DOMAIN-SUFFIX,4545.cf,Emby // 佛系Emby
-DOMAIN-SUFFIX,py.embyplus.club,Singapore // 品云Emby
-DOMAIN-SUFFIX,cu.poloemby.xyz,Emby // Polo
-DOMAIN-SUFFIX,nakonako.net,Emby // NakoNako
-DOMAIN-SUFFIX,jmsooo.com,Emby // 卷毛鼠
-DOMAIN-SUFFIX,odysseyplus.site,Japan // 奥德赛
-DOMAIN-SUFFIX,emby.wtf,Emby // 终点站
-DOMAIN-SUFFIX,mseic.com,Emby // 仲夏
-DOMAIN-SUFFIX,emby.texon.one,Emby // 菜菜服
-DOMAIN-SUFFIX,aiyowei.club,DIRECT // 春田花花 直连
-DOMAIN-SUFFIX,pornemby.xyz,Emby // PornEmby
-DOMAIN-SUFFIX,nebula-emby.com,Emby // 星云
-
-[Panel]
-Stream_all = script-name=Stream_all,title=流媒体解锁检测,content=请刷新,update-interval=-1
-
-[URL Rewrite]
-^https:\/\/duckduckgo.com\/\?q=wk\+([^&]+).+ https://zh.m.wikipedia.org/wiki/$1 302
-^https:\/\/duckduckgo.com\/\?q=bi\+([^&]+).+ https://www.bing.com/search?q=$1 302
-^https:\/\/duckduckgo.com\/\?q=gh\+([^&]+).+ https://github.com/search?q=$1 302
-^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ https://m.douban.com/search/?query=$1 302
-^https:\/\/duckduckgo.com\/\?q=zh\+([^&]+).+ https://www.zhihu.com/search?type=content&q=$1 302
-^https:\/\/duckduckgo.com\/\?q=dg\+([^&]+).+ https://www.duckduckgo.com/?ia=about&q=$1 302
-^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
 
