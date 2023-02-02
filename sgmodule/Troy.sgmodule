@@ -2,7 +2,7 @@
 #!desc=Some thing.
 
 [MITM]
-hostname = %APPEND% sub.store,hostname = %INSERT%, boxjs.com, boxjs.net
+hostname = %APPEND% sub.store,hostname = %INSERT% boxjs.com, boxjs.net
 
 [Script]
 Sub-Store Core=type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js,requires-body=true,timeout=120,ability=http-client-policy
