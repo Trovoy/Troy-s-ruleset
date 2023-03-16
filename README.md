@@ -6,6 +6,7 @@
 |~~[RejectDomain](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/RejectDomain.conf)~~|~~去广告~~| ❌  |
 | [Direct](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/Direct.conf) |  直连服务| ✅  |
 | ~~[AppleDomain](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/AppleDomain.conf)~~ | ~~苹果服务~~| ❌  |
+| [Qobuz](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/Qobuz.conf) | Qobuz| ✅  |
 | [AsianMedia](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/AsianMedia.conf) | 亚洲媒体| ✅  |
 | [GlobalMedia](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/GlobalMedia.conf) | 全球媒体| ✅  |
 | [Global](https://raw.githubusercontent.com/Trovoy/Troy-s-ruleset/main/Global.conf)| 全球服务| ✅  |
