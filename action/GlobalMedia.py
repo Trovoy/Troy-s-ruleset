@@ -12,5 +12,5 @@ for rawresult in [rawNetflix , rawDisney , rawYouTube , rawTwitch , rawTikTok , 
     result.extend([item for item in rawresult.split("\n") if not item.startswith('#')])
 result_text = '\n'.join(result)
 
-with open("./GlobalMedia.conf", "w") as f:
+with open("./GlobalMedia.list", "w") as f:
     f.write("\n".join(result))
