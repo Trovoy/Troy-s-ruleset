@@ -7,5 +7,5 @@ for rawresult in [rawGlobalDomian]:
     result.extend([item for item in rawresult.split("\n") if not item.startswith('#')])
 result_text = '\n'.join(result)
 
-with open("./GlobalDomain.conf", "w") as f:
+with open("./GlobalDomain.list", "w") as f:
     f.write("\n".join(result))
