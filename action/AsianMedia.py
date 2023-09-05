@@ -8,5 +8,5 @@ for rawresult in [rawBiliBili , rawBiliBiliIntl]:
     result.extend([item for item in rawresult.split("\n") if not item.startswith('#')])
 result_text = '\n'.join(result)
 
-with open("./AsianMedia.conf", "w") as f:
+with open("./AsianMedia.list", "w") as f:
     f.write("\n".join(result))
