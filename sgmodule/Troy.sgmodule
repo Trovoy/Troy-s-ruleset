@@ -11,4 +11,5 @@ Sub-Store Sync=type=cron,cronexp=55 23 * * *,wake-system=1,timeout=120,script-pa
 
 [General]
 skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com
+always-real-ip = %APPEND% easy-login.10099.com.cn
 
