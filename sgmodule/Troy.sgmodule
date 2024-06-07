@@ -12,5 +12,5 @@ Sub-Store Simple=type=http-request,pattern=^https?:\/\/sub\.store,script-path=ht
 
 [General]
 skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com
-always-real-ip = %APPEND% easy-login.10099.com.cn
+always-real-ip = %APPEND% easy-login.10099.com.cn,*-update.xoyocdn.com
 
