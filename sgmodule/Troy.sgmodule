@@ -11,6 +11,6 @@ Sub-Store Simple=type=http-request,pattern=^https?:\/\/sub\.store,script-path=ht
 {{{produce}}}=type=cron,cronexp="{{{produce_cronexp}}}",wake-system=1,timeout={{{timeout}}},script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js,engine={{{engine}}},argument="sub={{{produce_sub}}}&col={{{produce_col}}}"
 
 [General]
-skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com
-always-real-ip = %APPEND% easy-login.10099.com.cn,*-update.xoyocdn.com
+skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me
+always-real-ip = %APPEND% easy-login.10099.com.cn,*-update.xoyocdn.com,id6.me
 
